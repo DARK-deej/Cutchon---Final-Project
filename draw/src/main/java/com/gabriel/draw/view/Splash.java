@@ -21,7 +21,7 @@ public class Splash extends JPanel implements MouseListener {
     public Splash() {
         try {
             imageLoader = new ImageLoader();
-            image = imageLoader.loadImage("/ryanlayno.jpg");
+            image = imageLoader.loadImage("/djcutchon.png");
 //            image = ImageIO.read(new File("src\\main\\resources\\nette1440_800.png"));
             height = image.getHeight();
             width = image.getWidth();
@@ -32,8 +32,8 @@ public class Splash extends JPanel implements MouseListener {
         setSize(width, height);
         setLayout(null);
 
-        gPanel = new GPanel("GoDraw");
-        gPanel.setBounds(1200,340,509,313);
+        gPanel = new GPanel("startdraw");
+        gPanel.setBounds(1600,800,200,60);
         gPanel.addMouseListener(this);
         this.add(gPanel);
     }

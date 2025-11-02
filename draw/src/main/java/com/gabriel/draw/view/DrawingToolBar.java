@@ -20,7 +20,7 @@ public class DrawingToolBar extends JToolBar {
         this.actionListener = actionListener;
         addButtons();
 
-        setPreferredSize(new Dimension(200, 40));
+        setPreferredSize(new Dimension(200, 55));
         setBackground(Color.WHITE);
     }
 
@@ -50,7 +50,6 @@ public class DrawingToolBar extends JToolBar {
         button = makeNavigationButton("image",ActionCommand.IMAGE,"Add an  image",ActionCommand.IMAGE);
         add(button);
 
-        //separator
         addSeparator();
 
         button = makeNavigationButton("select",ActionCommand.SELECT,"Switch to select",ActionCommand.SELECT);
@@ -67,7 +66,7 @@ public class DrawingToolBar extends JToolBar {
         add(button);
 
         //fifth component is NOT a button!
-        JTextField textField = new JTextField("Ryan Reimann Layno - AM2");
+        JTextField textField = new JTextField("David Joshua B. Cutchon - AM2");
         textField.setColumns(10);
         textField.addActionListener(actionListener);
         textField.setActionCommand("TEXT_ENTERED");
